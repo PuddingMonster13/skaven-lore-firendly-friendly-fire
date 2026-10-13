@@ -1,0 +1,12 @@
+# working notes with local paths - not published
+HANDOFF.md
+
+# listing of the game's own code - belongs to the game's makers, not published
+re/f_ffcheck.txt
+
+# the Workshop thumbnail is someone else's artwork (Kuro) - not published here
+source/thumbnail_original.png
+source/thumbnail_user.py
+
+__pycache__/
+*.pyc
