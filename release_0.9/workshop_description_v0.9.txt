@@ -1,47 +1,17 @@
-Skaven lore-firendly (no) friendly fire
+In Skaven society there is no such thing as a "friend" - only temporary allies who haven't betrayed-backstabbed you YET.
 
-Life is cheap-cheap. In vanilla, Ratling Guns, Jezzails and Warpfire Throwers politely hold their fire whenever Skavenslaves stand in the way. This mod makes Skaven behave like Skaven: they shoot straight through their own chaff.
+This mod deals with the funny concept of "friendly fire": it simply lets Skaven shoot-aim straight through their own units, yes-yes. The AI does it too.
 
-WHAT IT DOES
-- Skaven ranged units no longer hold fire because the chosen friendly units stand in the line of fire.
-- The shots are real. Nothing about the projectiles is changed, so the units in the way can be hit - that is the point.
-- Applies to every Skaven unit with ammunition: weapon teams, Jezzails, Globadiers, slingers, artillery, lords and heroes.
-- The change is made in the game's own line-of-fire check, so it works for AI-controlled Skaven as well as for the player.
-- Only Skaven shooters are affected. Every other race keeps the normal behaviour, also when it fights next to Skaven.
-- No unit, stat or database table is changed.
+In case you want to keep some of your allies a little longer: in the glorious Mod Configuration Tool you can choose who gets shot through - expendable units (Skavenslaves and Pusbags, default), Clanrats, all infantry, monster infantry, or all units (lords & monsters included).
 
-OPTIONS (Mod Configuration Tool, section "Shoot through")
-- Expendable units (on by default): Skavenslaves, Skavenslave Spears, Skavenslave Slingers, Pusbags.
-- Clanrats: Clanrats and Clanrat Spearmen, with and without shields.
-- All infantry: every unit of the Skaven army that the game classes as infantry.
-- Monster infantry: Rat Ogres and Stormfiends.
-- All: ticks or unticks all of the above. While it is ticked, Skaven shoot through every friendly unit, lords and heroes included.
-The settings are read at the start of every battle. Without the Mod Configuration Tool the mod uses the default (expendable units only).
+Mind you, it is not balanced and never will be. Your units will take damage and will rout.
 
-REQUIRED
-- memreader Plus (by Druwski) - https://steamcommunity.com/sharedfiles/filedetails/?id=3811098873
-  The game has no setting for this behaviour, so the mod changes the line-of-fire check in memory through memreader Plus. Windows only (or Proton), like memreader Plus itself.
+Other mods do a similar thing, but they mostly raise the threshold at which ranged units are allowed to shoot. In this one, the selected units are simply ignored when the game checks for friendly obstacles.
 
-OPTIONAL
-- Mod Configuration Tool (MCT) - for the options above.
+REQUIRED: memreader Plus - https://steamcommunity.com/sharedfiles/filedetails/?id=3811098873
+OPTIONAL: Mod Configuration Tool, for the options above. Without it, only expendable units are shot through.
 
-GAME UPDATES
-The mod only works on the game version it was made for, and it checks that itself. If a game update changes the code it relies on, the mod switches itself off, changes nothing, and tells you once in the main menu. Everything else keeps working; the mod then needs an update from me.
+After a game update the mod may switch itself off until I update it. It tells you once in the main menu and changes nothing else.
 
-COMPATIBILITY
-- It changes no unit, so it should work alongside unit and overhaul mods. Units of the first, second and fourth option are recognised by their unit key (skavenslave, pusbag, clanrat, rat_ogres, stormfiend); "All infantry" and "All" also cover units added by other mods.
-- Battle only. It can be switched on and off at any time and does not touch save games.
-- Units that arrive later in a battle are looked for every two seconds.
-- Multiplayer is not tested. It could only work if every player has the mod, memreader Plus and the same settings.
-
-SOURCE
-The complete source, the tests and an explanation of how it works are public (MIT licence):
-https://github.com/PuddingMonster13/skaven-lore-firendly-friendly-fire
-
-CREDITS
-- Thumbnail artwork by Kuro (the artist's signature is on the picture). Only the title was added.
-- memreader Plus by Druwski, built on the memreader of Cpecific and squeek502.
-
-CHANGELOG
-v0.9
-- First public version.
+Source code (MIT): https://github.com/PuddingMonster13/skaven-lore-firendly-friendly-fire
+Thumbnail artwork by Kuro.
