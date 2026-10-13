@@ -34,6 +34,10 @@ COMPATIBILITY
 - Units that arrive later in a battle are looked for every two seconds.
 - Multiplayer is not tested. It could only work if every player has the mod, memreader Plus and the same settings.
 
+SOURCE
+The complete source, the tests and an explanation of how it works are public (MIT licence):
+https://github.com/PuddingMonster13/skaven-lore-firendly-friendly-fire
+
 CREDITS
 - Thumbnail artwork by Kuro (the artist's signature is on the picture). Only the title was added.
 - memreader Plus by Druwski, built on the memreader of Cpecific and squeek502.
